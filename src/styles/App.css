@@ -1,24 +1,21 @@
+/* Custom styles that complement Tailwind */
+
+/* Remove default body margin to let Tailwind handle spacing */
 body {
-  font-family: Arial, Helvetica, sans-serif;
   margin: 0;
-  background-color: lightgray;
 }
 
-.navbar {
-  background-color: #282c34;
-  padding: 16px;
+/* Custom utilities that aren't covered by Tailwind */
+.line-clamp-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
-.navbar a {
-  color: antiquewhite;
-  margin-right: 16px;
-  text-decoration: none;
-}
-
-.navbar a:hover {
-  text-decoration: underline;
-}
-
-.content {
-  padding: 20px
+.line-clamp-3 {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
