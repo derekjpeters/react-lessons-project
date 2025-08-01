@@ -31,6 +31,7 @@ function Contact() {
 				import.meta.env.VITE_EMAILJS_PUBLIC_KEY
 			)
 			.then(() => {
+				
 				setStatus("success");
 				setFormData({ name: "", email: "", title: "", message: "" });
 			})
